@@ -1,13 +1,12 @@
 import React from 'react';
+import Image from 'next/image';
 
 import Layout from '../components/Layout';
 
 import Scroll from '../components/Scroll';
 
-import pic1 from '../assets/images/pic01.jpg';
-import pic2 from '../assets/images/pic02.jpg';
-import pic3 from '../assets/images/pic03.jpg';
-import config from '../../config';
+import config from '../config';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -74,7 +73,7 @@ const IndexPage = () => (
     <section id="two" className="wrapper alt style2">
       <section className="spotlight">
         <div className="image">
-          <img src={pic1} alt="" />
+          <Image src={'/assets/images/pic01.jpg'} alt="" layout='fill'/>
         </div>
         <div className="content">
           <h2>
@@ -90,7 +89,7 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic2} alt="" />
+          <Image src={'/assets/images/pic02.jpg'} alt="" layout='fill'/>
         </div>
         <div className="content">
           <h2>
@@ -106,7 +105,7 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic3} alt="" />
+          <Image src={'/assets/images/pic03.jpg'} alt="" layout='fill'/>
         </div>
         <div className="content">
           <h2>

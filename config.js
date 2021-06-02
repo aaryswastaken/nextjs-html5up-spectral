@@ -1,4 +1,11 @@
-module.exports = {
+export default {
+  pathPrefix: "/",
+  siteMetadata: {
+    title: 'Next.js Html5up - Open-Source app with Spectral design',
+    description: `Open-Source Next.js Starter`,
+    author: `@vsahler`,
+    siteUrl: ``,
+  },
   siteTitle: 'Gatsby Starter Spectral', // <title>
   manifestName: 'Spectral',
   manifestShortName: 'Landing', // max 12 characters
@@ -7,11 +14,10 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-spectral/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Anubhav Srivastava',
   subHeading: 'Full time Web Developer. Part time Open source contributor  ',
   // social
-  socialLinks: [
+  social: [
     {
       style: 'brands',
       icon: 'fa-github',

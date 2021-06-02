@@ -14,13 +14,16 @@ class Scroll extends React.Component {
     timeout: PropTypes.number,
     children: PropTypes.node.isRequired,
   };
+
   constructor() {
     super();
     this.handleClick = this.handleClick.bind(this);
   }
+
   componentDidMount() {
     smoothscroll.polyfill();
   }
+
   handleClick(e) {
     e.preventDefault();
     let elem = 0;
